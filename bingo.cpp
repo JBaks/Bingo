@@ -60,6 +60,7 @@ int main()
 			printf("%d ",niz[i]);
 			delay(1);
 		}
+		printf("\n");
 		if(pobjeda==5){
 			printf("Dobili ste 20 000kn\n");
 		}
