@@ -24,7 +24,7 @@ int main()
 	for(i=0;i<6;i++)
 	{
 		scanf("%d",&brojevi[i]);
-		if(brojevi[i]<1 || brojevi[i]>48)
+		if(brojevi[i]<1 || brojevi[i]>48 || brojevi[i]==brojevi[i-1]||brojevi[i]==brojevi[i-2]||brojevi[i]==brojevi[i-3]||brojevi[i]==brojevi[i-4]||brojevi[i]==brojevi[i-5])
 		{
 			printf("Unesite ponovo:\n");
 			i--;
