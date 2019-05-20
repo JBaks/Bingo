@@ -39,6 +39,7 @@ int main()
 		for(i=0;i<35;i++)
 		{
 			printf("%d ",niz[i]);
+			sleep(1);
 		}
 			
 }
