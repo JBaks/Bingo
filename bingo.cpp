@@ -49,9 +49,11 @@ int main()
 		niz[i]=niz[j];
 		niz[j]=pom;
 		
-		for(int br=0;br<5;br++){
-            		if((niz[i]==brojevi[br])&&(i<5)){
+		for(int br=0;br<6;br++){
+            		if((niz[i]==brojevi[br])&&(i<5))
+					{
                 		pobjeda++;
+                		
             		}
             		}
 		}
@@ -61,8 +63,9 @@ int main()
 			delay(1);
 		}
 		printf("\n");
-		if(pobjeda==5){
-			printf("Dobili ste 20 000kn\n");
+		if(pobjeda==1)
+		{
+			printf("Cestitamo!! Osvojili ste 20 000 KM \n");
 		}
 
 }
