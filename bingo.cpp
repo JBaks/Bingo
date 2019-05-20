@@ -29,6 +29,16 @@ int main()
 			printf("Unesite ponovo:\n");
 			i--;
 		}
+		//Jos jedan primjer ako imamo 2 ista broja!
+		/*else
+        	{
+            	for(int k=0;k<i;k++){   
+                	if(brojevi[i]==brojevi[k]){
+                    		printf("Unesite ponovo:\n");
+                    		i--;
+                	}
+            	}
+		}*/
 
 
 	}
