@@ -73,7 +73,7 @@ int main()
 			delay(1);
 		}
 		printf("\n");
-		if(pobjeda==1)
+		if(pobjeda==5)
 		{
 			printf("Cestitamo!! Osvojili ste 20 000 KM \n");
 		}
