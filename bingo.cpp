@@ -18,7 +18,10 @@ void delay(int number_of_seconds)
 int main()
 {
 	int niz[48]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48};
-	int i,brojevi[6],j,pom=0,pobjeda=0;
+	int iznos[31]={20000,10000,7500,5000,2500,1000,500,300,200,150,100,90,80,70,60,50,40,30,25,20,15,10,9,8,7,6,5,4,3,2,1};
+	
+	int i,brojevi[6],j,pom=0,pobjeda=0,br_p;
+	
 
 	printf("Unesite 6 brojeva po vasem izboru:\n");
 	for(i=0;i<6;i++)
@@ -67,12 +70,30 @@ int main()
             		}
             		}
 		}
-		for(i=0;i<35;i++)
+		
+		for(i=0;i<35;i++)				
 		{
-			printf("%d ",niz[i]);
+			
+			if(i<4)
+			{
+				printf("%d\n",niz[i]);
+				
+				
+			}
+			else{
+				printf("%d	%d\n",niz[i],iznos[i-4]);
+				
+				
+			}
+			
+		
+			
 			delay(1);
 		}
 		printf("\n");
+		printf("\n");
+		
+		
 		if(pobjeda==5)
 		{
 			printf("Cestitamo!! Osvojili ste 20 000 KM \n");
