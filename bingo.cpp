@@ -113,6 +113,28 @@ if(pobjeda==5)
 {
 printf("Cestitamo!! Osvojili ste 20 000 KM \n");
 }
+else
+{
+    printf("Svi brojevi: ");
+    for(i=0;i<35;i++){
+        printf("%d,",niz[i]);
+    }
+    printf("\n");
+    printf("\n");
+    printf("Vasi brojevi: ");
+    for(i=0;i<6;i++){
+        printf("%d,",brojevi[i]);
+    }
+    printf("\n");
+    printf("Pogodjeni brojevi: ");
+    for(i=0;i<35;i++){
+        for(int l=0;l<6;l++){
+            if(niz[i]==brojevi[l])
+                printf("%d,",brojevi[l]);
+        }
+    }
+    printf("\n");
+}
 		
 
 }
