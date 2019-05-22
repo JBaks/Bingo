@@ -73,17 +73,31 @@ int main()
 		
 		for(i=0;i<35;i++)				
 		{
-			
+		    obicno=1;
+
 			if(i<4)
 			{
-				printf("%d\n",niz[i]);
-				
-				
+			    for(int b=0;b<6;b++){
+                    if(niz[i]==brojevi[b]){
+                        printf("%d *\n",niz[i]);
+                        obicno=0;
+                    }
+			    }
+			    if(obicno==1)
+                    printf("%d\n",niz[i]);
+
+
 			}
 			else{
-				printf("%d	%d\n",niz[i],iznos[i-4]);
-				
-				
+                for(int b=0;b<6;b++){
+                    if(niz[i]==brojevi[b]){
+                        printf("%d  %d *\n",niz[i],iznos[i-4]);
+                        obicno=0;
+                    }
+			    }
+                if(obicno==1)
+                    printf("%d  %d\n",niz[i],iznos[i-4]);
+
 			}
 			
 		
