@@ -140,8 +140,10 @@ else
     }
     printf("\n");
     printf("\n");
-    if(brojim==6)
+    if(brojim==6){
         printf("Osvojili ste %d $",pogodak);
+    }
+    printf("\n");
 }
 		
 }
