@@ -115,6 +115,8 @@ printf("Cestitamo!! Osvojili ste 20 000 KM \n");
 }
 else
 {
+    int brojim=0,pogodak=0;
+
     printf("Svi brojevi: ");
     for(i=0;i<35;i++){
         printf("%d,",niz[i]);
@@ -129,12 +131,17 @@ else
     printf("Pogodjeni brojevi: ");
     for(i=0;i<35;i++){
         for(int l=0;l<6;l++){
-            if(niz[i]==brojevi[l])
+            if(niz[i]==brojevi[l]){
                 printf("%d,",brojevi[l]);
+                pogodak=iznos[i-4];
+                brojim++;
+            }
         }
     }
     printf("\n");
+    printf("\n");
+    if(brojim==6)
+        printf("Osvojili ste %d $",pogodak);
 }
 		
-
 }
