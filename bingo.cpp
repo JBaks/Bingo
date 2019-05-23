@@ -145,5 +145,5 @@ else
     }
     printf("\n");
 }
-		
+delay(10);		
 }
