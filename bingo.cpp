@@ -45,6 +45,19 @@ while(pozitiva==1){
         for(i=0;i<6;i++){
             j=(rand()%47)+1;
             brojevi[i]=j;
+            if(brojevi[i]<1 || brojevi[i]>48 || brojevi[i]==brojevi[i-1]||brojevi[i]==brojevi[i-2]||brojevi[i]==brojevi[i-3]||brojevi[i]==brojevi[i-4]||brojevi[i]==brojevi[i-5]){
+                j=(rand()%47)+1;
+                brojevi[i]=j;
+                if(brojevi[i]<1 || brojevi[i]>48 || brojevi[i]==brojevi[i-1]||brojevi[i]==brojevi[i-2]||brojevi[i]==brojevi[i-3]||brojevi[i]==brojevi[i-4]||brojevi[i]==brojevi[i-5]){
+                    j=(rand()%47)+1;
+                    brojevi[i]=j;
+                }
+                else
+                brojevi[i]=j;
+            }
+            else{
+                brojevi[i]=j;
+            }
         }
         pozitiva=0;
         break;
