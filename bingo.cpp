@@ -21,9 +21,9 @@ int niz[48]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,2
 int iznos[31]={20000,10000,7500,5000,2500,1000,500,300,200,150,100,90,80,70,60,50,40,30,25,20,15,10,9,8,7,6,5,4,3,2,1};
 int i,brojevi[6],j,pom=0,pobjeda=0,br_p,obicno,pozitiva=1;
 
-printf("Izaberite jednu od dvije opcije:\n\n");
-printf("Pisat svoje brojeve--Stisnite 1.\n");
-printf("Slucajni listic--Stisnite 2.\n\n");
+printf("Izaberite opciju:\n\n");
+printf("Unos brojeva po izboru--Stisnite 1 \n");
+printf("Slucajni odabir brojeva--Stisnite 2 \n\n");
 
 while(pozitiva==1){
     switch(getch()){
@@ -141,20 +141,20 @@ else
 
     printf("Svi brojevi: ");
     for(i=0;i<35;i++){
-        printf("%d,",niz[i]);
+        printf("%d ",niz[i]);
     }
     printf("\n");
     printf("\n");
     printf("Vasi brojevi: ");
     for(i=0;i<6;i++){
-        printf("%d,",brojevi[i]);
+        printf("%d ",brojevi[i]);
     }
     printf("\n");
     printf("Pogodjeni brojevi: ");
     for(i=0;i<35;i++){
         for(int l=0;l<6;l++){
             if(niz[i]==brojevi[l]){
-                printf("%d,",brojevi[l]);
+                printf("%d ",brojevi[l]);
                 pogodak=iznos[i-4];
                 brojim++;
             }
@@ -163,7 +163,7 @@ else
     printf("\n");
     printf("\n");
     if(brojim==6){
-        printf("Osvojili ste %d $",pogodak);
+        printf("Osvojeni iznos: %d $",pogodak);
     }
     printf("\n");
 }
